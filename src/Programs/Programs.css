@@ -39,11 +39,14 @@
   flex-wrap: wrap;
   flex: 1;
   overflow-y: auto;
-  max-height: 70vh;
+  max-height: 71vh;
   padding-right: 10px;
 }
 
 .program-card {
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
