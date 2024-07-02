@@ -1,23 +1,52 @@
 /* src/Programs.css */
 
-.programs-container {
-    display: flex;
-  }
-  
-  .faceted-search {
-    width: 200px;
-    margin-right: 20px;
-  }
-  
-  .program-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .program-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-  }
-  
+.main-content {
+  display: flex;
+  padding-top:10rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.faceted-search {
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.facet {
+  margin-bottom: 20px;
+}
+
+.facet label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-group input {
+  margin-right: 5px;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  overflow-y: auto;
+  max-height: 70vh;
+  padding-right: 10px;
+}
+
+.program-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.333% - 20px); 
+  box-sizing: border-box;
+}

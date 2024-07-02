@@ -1,3 +1,9 @@
+.main-content {
+  display: flex;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
 .highlight-box {
   background-color: #ffffff; 
   padding: 40px;
@@ -20,8 +26,6 @@
 }
 .image-column {
   flex: 1;
-  padding-top: 6rem;
-  padding-right:9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +41,7 @@
 }
 
 .hockey_camp_pic{
-  width: 73%;
+  width: 500px;
 }
 
 .social-icons {
@@ -51,15 +55,8 @@
 }
 
 
-.main-content {
-  display: flex;
-  padding: 2rem;
-}
-
 .info-column {
   flex: 1;
-  padding-top: 6rem;
-  padding-left: 15rem;
   align-content: left;
 }
 
@@ -92,4 +89,22 @@ h2 {
   font-size: 30px;
   font-weight: bolder;
   color:#000000
+}
+
+.get-started-btn {
+  background-color: #795E00;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block; 
+  text-align: center;
+}
+
+.get-started-btn:hover {
+  background-color: #5d4700; 
 }

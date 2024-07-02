@@ -14,6 +14,7 @@ const Home = () => {
         <h1>SUMMER CAMP REGISTRATION OPEN</h1>
         <h2>TML Hockey Camp</h2>
         <h3>Join us for the 2024 Summer Season at Minto</h3>
+        <button className="get-started-btn">Get Started</button>
         <p className="top-space">
           Get ready for an unforgettable summer at TML Hockey Camp, where young athletes can develop their skills, make lasting friendships, and experience the thrill of the game in a supportive and fun environment. Whether you're a beginner looking to learn the basics or an experienced player aiming to take your game to the next level, our camp offers top-notch coaching, state-of-the-art facilities, and a passion for hockey that's unmatched.
         </p>
@@ -21,7 +22,6 @@ const Home = () => {
           <p>Age 5-10 Advanced Camp for 9 weeks</p>
           <p className="price">$400 per child</p>
         </div>
-        <p className="number-message">Call 111-111-1111 for more information</p>
       </div>
       <div className="image-column">
         <img src={hockey_camp} className="hockey_camp_pic" alt="Hockey Camp" />

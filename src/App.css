@@ -1,7 +1,5 @@
 /* src/App.css */
-.App {
-  padding-top: 80px; /* Adjust this value based on your navbar height */
-}
+
 
 .navbar {
   background-color: #00164F;
@@ -37,7 +35,7 @@
   display: block;
   color: #F0F0F0;
   text-decoration: none;
-  padding: 0.5rem 0.8rem; /* Adjusted padding to accommodate font weight change */
+  padding: 0.5rem 0.8rem; 
 }
 
 .menu a:hover {
