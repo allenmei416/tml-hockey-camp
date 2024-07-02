@@ -1,0 +1,23 @@
+/* src/Programs.css */
+
+.programs-container {
+    display: flex;
+  }
+  
+  .faceted-search {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .program-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .program-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  

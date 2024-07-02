@@ -1,0 +1,95 @@
+.highlight-box {
+  background-color: #ffffff; 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.highlight-box p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.highlight-box .price {
+  color: #795E00;
+  font-size: 55px;
+  font-weight: bolder;
+}
+.image-column {
+  flex: 1;
+  padding-top: 6rem;
+  padding-right:9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+.hockey_camp_pic{
+  width: 73%;
+}
+
+.social-icons {
+  padding-top:2rem;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons > i {
+  margin-right: 10px;
+}
+
+
+.main-content {
+  display: flex;
+  padding: 2rem;
+}
+
+.info-column {
+  flex: 1;
+  padding-top: 6rem;
+  padding-left: 15rem;
+  align-content: left;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: left !important;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+h2 {
+  text-align: left !important;
+  font-size: 40px;
+  font-weight: bolder;
+  color:#795E00
+}
+
+.top-space {
+  padding-top: 30px;
+}
+
+.number-message{
+  text-align: center !important;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  color:#000000
+}

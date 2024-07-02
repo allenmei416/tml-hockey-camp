@@ -1,35 +1,39 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './Home/Home';
+import Programs from './Programs/Programs';
+import Coaches from './Coaches/Coaches';
+import Contact from './Contact/Contact';
+import Register from './Register/Register';
 import './App.css';
+import logo from './images/logo.png';
 
 const App = () => {
   return (
-    <div className="App">
-      <nav className="navbar">
-        <ul className="menu">
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#coaches">Coaches</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#register">Register</a></li>
-        </ul>
-      </nav>
-      <div className="main-content">
-        <div className="info-column">
-          <h1>SUMMER CAMP REGISTRATION OPEN</h1>
-          <h2>TML Hockey Camp</h2>
-          <p>Join us for the 2024 Summer Season at Minto</p>
-          <p>
-            Get ready for an unforgettable summer at TML Hockey Camp, where young athletes can develop their skills, make lasting friendships, and experience the thrill of the game in a supportive and fun environment. Whether you're a beginner looking to learn the basics or an experienced player aiming to take your game to the next level, our camp offers top-notch coaching, state-of-the-art facilities, and a passion for hockey that's unmatched.
-          </p>
-          <p>Age 5-10 Advanced Camp for 9 weeks</p>
-          <p>$400 per child</p>
-          <p>Call 111-111-1111 for more information</p>
-        </div>
-        <div className="image-column">
-          <img src="path/to/your/image.jpg" alt="Hockey Camp" />
-        </div>
+    <Router>
+      <div className="App">
+        <nav className="navbar">
+          <div>
+            <img src={logo} className="logo" alt="Logo" />
+          </div>
+          <ul className="menu">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/programs">Programs</Link></li>
+            <li><Link to="/coaches">Coaches</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/register" className="register-button">Register</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/coaches" element={<Coaches />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 };
 
