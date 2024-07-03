@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Home/Home';
@@ -11,7 +10,7 @@ import logo from './images/logo.png';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/tml-hockey-camp">
       <div className="App">
         <nav className="navbar">
           <div>
@@ -26,7 +25,6 @@ const App = () => {
           </ul>
         </nav>
         <Routes>
-          <Route path="/tml-hockey-camp" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/coaches" element={<Coaches />} />
