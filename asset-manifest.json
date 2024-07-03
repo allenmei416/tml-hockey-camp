@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tml-hockey-camp/static/css/main.d911cd5d.css",
+    "main.js": "/tml-hockey-camp/static/js/main.c5e477b2.js",
+    "static/js/453.fc9e98a6.chunk.js": "/tml-hockey-camp/static/js/453.fc9e98a6.chunk.js",
+    "static/media/map.png": "/tml-hockey-camp/static/media/map.dde7b74b19cfbbd139a2.png",
+    "static/media/hockey_coach3.jpg": "/tml-hockey-camp/static/media/hockey_coach3.42fd07c3e5b54fbc5053.jpg",
+    "static/media/logo.png": "/tml-hockey-camp/static/media/logo.98017b40cb95fe328a0a.png",
+    "static/media/hockey_coach2.jpg": "/tml-hockey-camp/static/media/hockey_coach2.b70c64f35f82a1af64e7.jpg",
+    "static/media/hockey-camp1.png": "/tml-hockey-camp/static/media/hockey-camp1.c9a3fb02d554992bb615.png",
+    "static/media/hockey_coach1.jpg": "/tml-hockey-camp/static/media/hockey_coach1.d79dc636b820db782d38.jpg",
+    "static/media/twitter.png": "/tml-hockey-camp/static/media/twitter.7e40f617aaa8eca864bb.png",
+    "static/media/instagram.png": "/tml-hockey-camp/static/media/instagram.ac32ec0a111aeba03298.png",
+    "static/media/youtube.png": "/tml-hockey-camp/static/media/youtube.023fa7c90329ce3ddf55.png",
+    "static/media/facebook.png": "/tml-hockey-camp/static/media/facebook.bfd1cfff9f9521198b26.png",
+    "index.html": "/tml-hockey-camp/index.html",
+    "main.d911cd5d.css.map": "/tml-hockey-camp/static/css/main.d911cd5d.css.map",
+    "main.c5e477b2.js.map": "/tml-hockey-camp/static/js/main.c5e477b2.js.map",
+    "453.fc9e98a6.chunk.js.map": "/tml-hockey-camp/static/js/453.fc9e98a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d911cd5d.css",
+    "static/js/main.c5e477b2.js"
+  ]
+}
