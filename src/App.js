@@ -26,6 +26,7 @@ const App = () => {
           </ul>
         </nav>
         <Routes>
+          <Route path="/tml-hockey-camp" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/coaches" element={<Coaches />} />
