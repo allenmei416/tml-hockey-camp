@@ -25,6 +25,7 @@ const App = () => {
             <li><Link to="/register" className="register-button">Register</Link></li>
           </ul>
         </nav>
+        <p>hi</p>
         <Routes>
           <Route path="/tml-hockey-camp" element={<Home />} />
           <Route path="/" element={<Home />} />
