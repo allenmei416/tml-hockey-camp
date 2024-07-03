@@ -42,7 +42,7 @@ const Contact = () => {
       <div className="right-column">
         <div className="chat-container">
           <h3>Live Chat</h3>
-          <p className="chat-description">Communicate with our support team live for immediate assistance.</p>
+          <p className="chat-description">Communicate with our support team/coaches for immediate assistance.</p>
           <div className="chat-box">
             <div className="messages">
               {messages.map((message, index) => (
