@@ -53,3 +53,20 @@
   width: calc(33.333% - 20px); 
   box-sizing: border-box;
 }
+
+
+.weekly-activities {
+  margin-top: 20px;
+}
+
+.weekly-activities table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.weekly-activities th,
+.weekly-activities td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}

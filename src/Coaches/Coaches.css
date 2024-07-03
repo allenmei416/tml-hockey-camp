@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 15rem;
-  margin-right: 15rem;
+  margin-right: 15rem;  
+  padding-bottom: 4rem;
 }
 
 .column {

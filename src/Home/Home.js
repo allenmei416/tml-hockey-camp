@@ -1,6 +1,6 @@
-// src/Home.js
 import React from 'react';
-import './Home.css'; // Import Home.css for specific styles
+import { useNavigate } from 'react-router-dom';
+import './Home.css';
 import hockey_camp from '../images/hockey-camp1.png';
 import instagram from '../images/instagram.png';
 import twitter from '../images/twitter.png';
@@ -8,13 +8,19 @@ import youtube from '../images/youtube.png';
 import facebook from '../images/facebook.png';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/register');
+  };
+
   return (
     <div className="main-content">
       <div className="info-column">
         <h1>SUMMER CAMP REGISTRATION OPEN</h1>
         <h2>TML Hockey Camp</h2>
         <h3>Join us for the 2024 Summer Season at Minto</h3>
-        <button className="get-started-btn">Get Started</button>
+        <button className="get-started-btn" onClick={handleGetStarted}>Get Started</button>
         <p className="top-space">
           Get ready for an unforgettable summer at TML Hockey Camp, where young athletes can develop their skills, make lasting friendships, and experience the thrill of the game in a supportive and fun environment. Whether you're a beginner looking to learn the basics or an experienced player aiming to take your game to the next level, our camp offers top-notch coaching, state-of-the-art facilities, and a passion for hockey that's unmatched.
         </p>

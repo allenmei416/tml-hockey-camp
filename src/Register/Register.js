@@ -13,13 +13,13 @@ const Register = () => {
     fullName: '',
     birthday: null,
     program: '',
-    attendanceDays: {
-      Monday: false,
-      Tuesday: false,
-      Wednesday: false,
-      Thursday: false,
-      Friday: false,
-    },
+    schedule: {
+      Monday: { attending: false },
+      Tuesday: { attending: false },
+      Wednesday: { attending: false },
+      Thursday: { attending: false },
+      Friday: { attending: false },
+    }
   }]);
 
   const handleParentChange = (e) => {
@@ -40,9 +40,9 @@ const Register = () => {
     setChildren(updatedChildren);
   };
 
-  const handleAttendanceChange = (index, day) => {
+  const handleScheduleChange = (index, day) => {
     const updatedChildren = [...children];
-    updatedChildren[index].attendanceDays[day] = !updatedChildren[index].attendanceDays[day];
+    updatedChildren[index].schedule[day].attending = !updatedChildren[index].schedule[day].attending;
     setChildren(updatedChildren);
   };
 
@@ -51,13 +51,13 @@ const Register = () => {
       fullName: '',
       birthday: null,
       program: '',
-      attendanceDays: {
-        Monday: false,
-        Tuesday: false,
-        Wednesday: false,
-        Thursday: false,
-        Friday: false,
-      },
+      schedule: {
+        Monday: { attending: false },
+        Tuesday: { attending: false },
+        Wednesday: { attending: false },
+        Thursday: { attending: false },
+        Friday: { attending: false },
+      }
     }]);
   };
 
@@ -65,14 +65,13 @@ const Register = () => {
     e.preventDefault();
     console.log('Parent Info:', parentInfo);
     console.log('Children:', children);
-    // Here you can handle form submission, such as sending data to a backend
   };
 
   return (
     <div className="register-container">
-      <h1>Registration</h1>
+      <h2>Registration</h2>
       <form onSubmit={handleSubmit}>
-        <h2>Parent’s Information</h2>
+        <h3>Parent’s Information</h3>
         <div className="form-group">
           <label>Full Name</label>
           <input
@@ -108,7 +107,7 @@ const Register = () => {
         </div>
         {children.map((child, index) => (
           <div key={index} className="child-info">
-            <h2>Child’s Information</h2>
+            <h3>Child’s Information</h3>
             <div className="form-group">
               <label>Full Name</label>
               <input
@@ -139,26 +138,51 @@ const Register = () => {
                 required
               >
                 <option value="">Select a Program</option>
-                <option value="Beginner">Beginner</option>
-                <option value="Intermediate">Intermediate</option>
-                <option value="Advanced">Advanced</option>
+                <option value="1">Advanced Hockey Skills</option>
+                <option value="2">Beginner Hockey Camp</option>
+                <option value="3">Intermediate Hockey Training</option>
+                <option value="4">Elite Hockey Program</option>
+                <option value="5">Basic Skating Skills</option>
+                <option value="6">Hockey Fun Camp</option>
+                <option value="7">Goalie Training Camp</option>
+                <option value="8">Hockey Conditioning</option>
+                <option value="9">Summer Hockey School</option>
+                <option value="0">Hockey Skills Clinic</option>
               </select>
             </div>
-            <div className="form-group">
-              <label>Attendance Days</label>
-              <div className="attendance-days">
-                {Object.keys(child.attendanceDays).map((day) => (
-                  <label key={day}>
-                    <input
-                      type="checkbox"
-                      checked={child.attendanceDays[day]}
-                      onChange={() => handleAttendanceChange(index, day)}
-                    />
-                    {day}
-                  </label>
-                ))}
-              </div>
-            </div>
+            <table className="schedule-table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Attending</th>
+                  <th>Activity</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.keys(child.schedule).map((day) => {
+                  const activities = {
+                    Monday: 'Off Ice Conditioning Training and Skill',
+                    Tuesday: 'On Ice Drills',
+                    Wednesday: 'Field Trip Day',
+                    Thursday: 'On Ice Drills',
+                    Friday: 'Scrimmage All Day'
+                  };
+                  return (
+                    <tr key={day}>
+                      <td>{day}</td>
+                      <td>
+                        <input
+                          type="checkbox"
+                          checked={child.schedule[day].attending}
+                          onChange={() => handleScheduleChange(index, day)}
+                        />
+                      </td>
+                      <td>{activities[day]}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         ))}
         <button type="button" onClick={addAnotherChild} className="add-child-button">Add Another Child</button>
