@@ -11,7 +11,7 @@ import logo from './images/logo.png';
 
 const App = () => {
   return (
-    <Router basename="/">
+    <Router >
       <div className="App">
         <nav className="navbar">
           <div>
